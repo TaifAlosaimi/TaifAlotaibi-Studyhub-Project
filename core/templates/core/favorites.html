@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}Favorites | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="favorites-page">
+
+    <div class="page-intro">
+
+        <p class="eyebrow">
+            STUDYHUB / YOUR COLLECTION
+        </p>
+
+        <h1>
+            Saved
+            <em>Resources.</em>
+        </h1>
+
+        <p class="page-description">
+            Your favorite learning resources, saved for later.
+        </p>
+
+    </div>
+
+
+    <div class="resource-grid">
+
+        {% if resources %}
+
+            {% for resource in resources %}
+
+                <article class="resource-card">
+
+                    <div class="resource-card-content">
+
+                        <div class="resource-card-top">
+
+                            <span class="resource-type">
+                                {{ resource.type }}
+                            </span>
+
+                            <span class="resource-number">
+                                0{{ resource.id }}
+                            </span>
+
+                        </div>
+
+                        <h2>{{ resource.title }}</h2>
+
+                        <p>
+                            {{ resource.description }}
+                        </p>
+
+                    </div>
+
+
+                    <div class="resource-card-footer">
+
+                        <a
+                            class="button"
+                            href="{% url 'resource_detail' resource.id %}"
+                        >
+                            View Resource →
+                        </a>
+
+
+                        <form
+                            method="post"
+                            action="{% url 'remove_favorite' resource.id %}"
+                        >
+
+                            {% csrf_token %}
+
+                            <button
+                                class="remove-button"
+                                type="submit"
+                            >
+                                Remove
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </article>
+
+            {% endfor %}
+
+        {% else %}
+
+            <div class="empty-state">
+
+                <p class="eyebrow">
+                    YOUR LIBRARY IS QUIET
+                </p>
+
+                <h2>No favorites yet.</h2>
+
+                <p>
+                    Explore the resources and save the ones
+                    you want to come back to.
+                </p>
+
+                <a
+                    class="button"
+                    href="{% url 'resource_list' %}"
+                >
+                    Explore Resources →
+                </a>
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+{% endblock %}

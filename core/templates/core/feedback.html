@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="feedback-page">
+
+    <div class="page-intro">
+
+        <p class="eyebrow">
+            STUDYHUB / FEEDBACK
+        </p>
+
+        <h1>
+            Tell us
+            <em>what you think.</em>
+        </h1>
+
+        <p class="page-description">
+            Your feedback helps us improve the StudyHub experience.
+        </p>
+
+    </div>
+
+
+    <div class="feedback-card">
+
+        <form
+            method="post"
+            enctype="multipart/form-data"
+        >
+
+            {% csrf_token %}
+
+
+            <div class="form-field">
+
+                <label for="{{ form.name.id_for_label }}">
+                    Name
+                </label>
+
+                {{ form.name }}
+
+                {% if form.name.errors %}
+                    <div class="form-error">
+                        {{ form.name.errors }}
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="{{ form.email.id_for_label }}">
+                    Email
+                </label>
+
+                {{ form.email }}
+
+                {% if form.email.errors %}
+                    <div class="form-error">
+                        {{ form.email.errors }}
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="{{ form.message.id_for_label }}">
+                    Message
+                </label>
+
+                {{ form.message }}
+
+                {% if form.message.errors %}
+                    <div class="form-error">
+                        {{ form.message.errors }}
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="{{ form.rating.id_for_label }}">
+                    Rating
+                    <span>(Optional)</span>
+                </label>
+
+                {{ form.rating }}
+
+                {% if form.rating.errors %}
+                    <div class="form-error">
+                        {{ form.rating.errors }}
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="{{ form.screenshot.id_for_label }}">
+                Screenshot of the Issue
+                <span>(Optional)</span>
+            </label>
+
+            <p class="field-help">
+                Upload a screenshot showing the problem you encountered.
+            </p>
+
+            {{ form.screenshot }}
+
+                {% if form.screenshot.errors %}
+                    <div class="form-error">
+                        {{ form.screenshot.errors }}
+                    </div>
+                {% endif %}
+
+            </div>
+          
+
+            <button
+                class="button"
+                type="submit"
+            >
+                Submit Feedback →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

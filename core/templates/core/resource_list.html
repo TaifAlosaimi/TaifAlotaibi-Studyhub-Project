@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Resources | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="resources-page">
+
+    <div class="page-intro">
+        <p class="eyebrow">STUDYHUB / LIBRARY</p>
+
+        <h1>
+            Explore
+            <em>Resources.</em>
+        </h1>
+
+        <p class="page-description">
+            Discover useful learning resources to support your studies
+            and expand your knowledge.
+        </p>
+    </div>
+
+
+    <div class="resource-grid">
+
+        {% for resource in resources %}
+
+            <article class="resource-card">
+
+        
+                    
+
+
+                            <div class="resource-card-image">
+    {% if resource.id == 1 %}
+        <img src="{% static 'images/python.png.png' %}" alt="Introduction to Python">
+    {% elif resource.id == 2 %}
+        <img src="{% static 'images/django.png.png' %}" alt="Django Fundamentals">
+    {% elif resource.id == 3 %}
+        <img src="{% static 'images/documentation.png.png' %}" alt="Python Documentation">
+    {% elif resource.id == 4 %}
+        <img src="{% static 'images/tutorial.png.png' %}" alt="Django Tutorial">
+    {% endif %}
+</div>
+                 
+
+                <div class="resource-card-content">
+
+                    <div class="resource-card-top">
+                        <span class="resource-type">
+                            {{ resource.type }}
+                        </span>
+
+                        <span class="resource-number">
+                            0{{ resource.id }}
+                        </span>
+                    </div>
+
+                    <h2>{{ resource.title }}</h2>
+
+                    <p>
+                        {{ resource.description }}
+                    </p>
+
+                </div>
+
+
+                <div class="resource-card-footer">
+
+                    <a
+                        class="button"
+                        href="{% url 'resource_detail' resource.id %}"
+                    >
+                        View Resource →
+                    </a>
+
+                </div>
+
+            </article>
+
+        {% empty %}
+
+            <p>No resources are available right now.</p>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}{{ resource.title }} | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="resource-detail-page">
+
+    <a class="back-link" href="{% url 'resource_list' %}">
+        ← Back to Resources
+    </a>
+
+    <div class="resource-detail-header">
+
+        <p class="eyebrow">
+            STUDYHUB / {{ resource.type }}
+        </p>
+
+        <h1>{{ resource.title }}</h1>
+
+        <p class="resource-detail-description">
+            {{ resource.description }}
+        </p>
+
+    </div>
+
+    <nav class="resource-tabs">
+        <a href="?tab=overview"
+           class="{% if tab == 'overview' %}active{% endif %}">
+            Overview
+        </a>
+
+        <a href="?tab=details"
+           class="{% if tab == 'details' %}active{% endif %}">
+            Details
+        </a>
+    </nav>
+
+    <div class="resource-detail-content">
+
+        {% if tab == "details" %}
+
+            <p class="eyebrow">RESOURCE DETAILS</p>
+
+            <h2>About this resource</h2>
+
+            <p>
+                This resource is provided as {{ resource.type }}.
+            </p>
+
+            <p class="resource-id">
+                Resource ID: {{ resource.id }}
+            </p>
+
+        {% else %}
+
+            <p class="eyebrow">OVERVIEW</p>
+
+            <h2>Keep learning.</h2>
+
+            <p>
+                Explore this learning resource and continue building
+                your knowledge through StudyHub.
+            </p>
+
+        {% endif %}
+
+    </div>
+
+    <div class="resource-actions">
+
+        <a class="detail-button primary"
+           href="{{ resource.url }}"
+           target="_blank">
+            Visit Resource →
+        </a>
+
+        <form method="post"
+              action="{% url 'add_favorite' resource.id %}">
+            {% csrf_token %}
+
+            <button class="detail-button secondary" type="submit">
+                Add to Favorites +
+            </button>
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

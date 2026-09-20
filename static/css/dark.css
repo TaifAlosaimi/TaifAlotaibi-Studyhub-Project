@@ -1,0 +1,358 @@
+/* ================================
+   STUDYHUB — DARK THEME
+   ================================ */
+
+body.dark {
+    background: #1B263B;
+    color: #F6F3ED;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+body.dark .site-header {
+    background: #1B263B;
+    border-bottom: 1px solid #3D5A80;
+}
+
+body.dark .site-nav a {
+    color: #F6F3ED;
+}
+
+body.dark .site-nav a:hover {
+    color: #D8E6F2;
+}
+
+/* =========================
+   DARK THEME — HOME
+   ========================= */
+
+.dark .home-page {
+    background: #1B263B;
+}
+
+.dark .home-intro {
+    background: #1B263B;
+    color: #F6F3ED;
+}
+
+.dark .home-intro .eyebrow {
+    color: #98B4C7;
+}
+
+.dark .home-intro h1 {
+    color: #F6F3ED;
+}
+
+.dark .home-intro h1 em {
+    color: #D6B4AD;
+}
+
+.dark .home-intro .page-description {
+    color: #98B4C7;
+}
+
+.dark .home-intro .button {
+    background: #F6F3ED;
+    color: #1B263B;
+}
+
+.dark .home-intro .button:hover {
+    background: #D8E6F2;
+    color: #1B263B;
+}
+
+/* Logo */
+
+body.dark .site-nav > a:first-child img {
+    filter: brightness(0) invert(1);
+}
+
+/* ================================
+   GENERAL TEXT
+   ================================ */
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4 {
+    color: #F6F3ED;
+}
+
+body.dark p {
+    color: #D8E6F2;
+}
+
+body.dark .eyebrow {
+    color: #98B4C7;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+body.dark .button {
+    background: #F6F3ED;
+    color: #1B263B;
+    border: 1px solid #F6F3ED;
+}
+
+body.dark .button:hover {
+    background: #D8E6F2;
+    border-color: #D8E6F2;
+    color: #1B263B;
+}
+
+/* ================================
+   RESOURCE CARDS
+   ================================ */
+
+body.dark .resource-card {
+    background: #3D5A80;
+    color: #F6F3ED;
+    border: 1px solid #98B4C7;
+}
+
+body.dark .resource-card h2 {
+    color: #F6F3ED;
+}
+
+body.dark .resource-card p {
+    color: #D8E6F2;
+}
+
+body.dark .resource-type {
+    color: #F6F3ED;
+}
+
+body.dark .resource-number {
+    color: #98B4C7;
+}
+
+body.dark .resource-card .button {
+    background: #F6F3ED;
+    color: #1B263B;
+}
+
+/* Remove different card colors */
+
+body.dark .resource-card:nth-child(1),
+body.dark .resource-card:nth-child(2),
+body.dark .resource-card:nth-child(3),
+body.dark .resource-card:nth-child(4) {
+    background: #3D5A80;
+}
+
+/* ================================
+   RESOURCE DETAIL
+   ================================ */
+
+body.dark .resource-detail-page {
+    background: #1B263B;
+}
+
+body.dark .resource-detail-header h1 {
+    color: #F6F3ED;
+}
+
+body.dark .resource-detail-description {
+    color: #D8E6F2;
+}
+
+body.dark .back-link {
+    color: #98B4C7;
+}
+
+body.dark .back-link:hover {
+    color: #F6F3ED;
+}
+
+body.dark .resource-tabs {
+    border-bottom-color: #3D5A80;
+}
+
+body.dark .resource-tabs a {
+    color: #98B4C7;
+}
+
+body.dark .resource-tabs a.active {
+    color: #F6F3ED;
+}
+
+body.dark .resource-tabs a.active::after {
+    background: #F6F3ED;
+}
+
+body.dark .resource-detail-content h2 {
+    color: #F6F3ED;
+}
+
+body.dark .resource-detail-content p {
+    color: #D8E6F2;
+}
+
+/* Detail buttons */
+
+body.dark .detail-button.primary {
+    background: #F6F3ED;
+    color: #1B263B;
+    border-color: #F6F3ED;
+}
+
+body.dark .detail-button.primary:hover {
+    background: #D8E6F2;
+    border-color: #D8E6F2;
+}
+
+body.dark .detail-button.secondary {
+    background: transparent;
+    color: #F6F3ED;
+    border-color: #F6F3ED;
+}
+
+body.dark .detail-button.secondary:hover {
+    background: #F6F3ED;
+    color: #1B263B;
+}
+
+/* ================================
+   PREFERENCES
+   ================================ */
+
+body.dark .preference-card {
+    background: #3D5A80;
+    border-color: #98B4C7;
+}
+
+body.dark .preference-card h2 {
+    color: #F6F3ED;
+}
+
+body.dark .preference-card p {
+    color: #D8E6F2;
+}
+
+/* ================================
+   FEEDBACK
+   ================================ */
+
+body.dark .feedback-card {
+    background: #3D5A80;
+    border-color: #98B4C7;
+}
+
+body.dark .feedback-card label {
+    color: #F6F3ED;
+}
+
+body.dark .feedback-card input,
+body.dark .feedback-card textarea {
+    color: #F6F3ED;
+    border-color: #98B4C7;
+    background: #1B263B;
+}
+
+body.dark .feedback-card input:focus,
+body.dark .feedback-card textarea:focus {
+    outline-color: #D8E6F2;
+}
+
+body.dark .form-error {
+    color: #D6B4AD;
+}
+
+/* ================================
+   THANK YOU
+   ================================ */
+
+body.dark .feedback-thanks-card {
+    background: #3D5A80;
+    border-color: #98B4C7;
+}
+
+body.dark .feedback-thanks-card p {
+    color: #F6F3ED;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+body.dark .site-footer {
+    background: #101827;
+    border-top: 1px solid #3D5A80;
+}
+
+body.dark .site-footer p {
+    color: #F6F3ED;
+}
+
+.dark .remove-button {
+    border-color: #D6B4AD;
+    color: #D6B4AD;
+}
+
+.dark .remove-button:hover {
+    background: #D6B4AD;
+    color: #1B263B;
+}
+/* Favorites - Empty State */
+.dark .empty-state {
+    background: #2F4D70;
+    border: 1px solid #45688F;
+    color: #F5F1E8;
+}
+
+.dark .empty-state .eyebrow {
+    color: #AFC8DF;
+}
+
+.dark .empty-state h2 {
+    color: #F5F1E8;
+}
+
+.dark .empty-state p {
+    color: #C2D0DE;
+}
+
+.dark .empty-state .button {
+    background: #F5F1E8;
+    color: #1B2A41;
+    border-color: #F5F1E8;
+}
+
+.dark .empty-state .button:hover {
+    background: #D6B4AD;
+    border-color: #D6B4AD;
+    color: #1B2A41;
+}
+
+
+   /* =========================
+   DARK FOOTER
+   ========================= */
+
+.dark .site-footer {
+    background: #111C2F !important;
+    color: #F6F3ED !important;
+    border-top-color: #3D5A80 !important;
+}
+
+.dark .footer-label {
+    color: #98B4C7 !important;
+}
+
+.dark .footer-email,
+.dark .footer-links a {
+    color: #F6F3ED !important;
+}
+
+.dark .footer-credit {
+    color: #98B4C7 !important;
+}
+
+.dark .footer-logo {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}

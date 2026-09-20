@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}StudyHub{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/light.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dark.css' %}">
+</head>
+
+<body class="{{ theme }}">
+
+    <header class="site-header">
+       <nav class="site-nav">
+
+   
+    <a class="site-logo" href="{% url 'home' %}">
+    <img src="{% static 'images/logo.png.png' %}" alt="StudyHub">
+</a>
+
+    <div class="site-nav-links">
+
+        <a class="nav-link nav-home" href="{% url 'home' %}">
+            Home
+        </a>
+
+        <a class="nav-link" href="{% url 'resource_list' %}">
+            Resources
+        </a>
+
+        <a class="nav-link" href="{% url 'favorites' %}">
+            Favorites
+        </a>
+
+        <a class="nav-link" href="{% url 'preferences' %}">
+            Preferences
+        </a>
+
+        <a class="nav-link" href="{% url 'feedback' %}">
+            Feedback
+        </a>
+
+    </div>
+
+</nav>
+    </header>
+
+    <main class="site-main">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+   <footer class="site-footer">
+
+    <div class="footer-column footer-contact">
+        <p class="footer-label">CONTACT</p>
+
+        <a href="mailto:taif7falibrahim@gmail.com" class="footer-email">
+            taif7falibrahim@gmail.com
+        </a>
+    </div>
+
+
+    <div class="footer-center">
+
+        <a href="{% url 'home' %}" class="footer-logo-link">
+            <img
+                src="{% static 'images/logo.png.png' %}"
+                alt="StudyHub"
+                class="footer-logo"
+            >
+        </a>
+
+        <p class="footer-credit">
+            MADE BY<br>
+            <span>Taif Alotaibi</span>
+        </p>
+
+    </div>
+
+
+    <div class="footer-column footer-navigation">
+
+        <p class="footer-label">NAVIGATION</p>
+
+        <nav class="footer-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'resource_list' %}">Resources</a>
+            <a href="{% url 'favorites' %}">Favorites</a>
+            <a href="{% url 'preferences' %}">Preferences</a>
+            <a href="{% url 'feedback' %}">Feedback</a>
+        </nav>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

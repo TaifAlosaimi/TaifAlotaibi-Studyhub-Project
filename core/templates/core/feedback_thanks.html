@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="feedback-thanks-page">
+
+    <div class="page-intro">
+
+        <p class="eyebrow">
+            STUDYHUB / THANK YOU
+        </p>
+
+        <h1>
+            Thank
+            <em>You.</em>
+        </h1>
+
+        <p class="page-description">
+            Your feedback has been received successfully.
+        </p>
+
+    </div>
+
+
+    <div class="feedback-thanks-card">
+
+        <p>
+            We appreciate you taking the time to share
+            your thoughts with StudyHub.
+        </p>
+
+        <a
+            class="button"
+            href="{% url 'home' %}"
+        >
+            Back to Home →
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,269 @@
+/* =========================================
+   STUDYHUB — LIGHT THEME
+   ========================================= */
+
+body.light {
+    background: #F6F3ED;
+    color: #1B263B;
+}
+
+body.light .site-main {
+    background: #F6F3ED;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+body.light .site-header {
+    background: #F6F3ED;
+    border-color: #C4B6A6;
+}
+
+body.light .site-nav > a,
+body.light .site-nav-links a {
+    color: #1B263B;
+}
+
+body.light .site-nav-links a:hover {
+    color: #3D5A80;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+body.light h1,
+body.light h2,
+body.light h3 {
+    color: #1B263B;
+}
+
+body.light .eyebrow {
+    color: #3D5A80;
+}
+
+body.light .page-description {
+    color: #3D5A80;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+body.light .button {
+    background: #1B263B;
+    color: #F6F3ED;
+}
+
+body.light .button:hover {
+    background: #3D5A80;
+}
+
+
+/* =========================
+   HOME
+   ========================= */
+
+body.light .home-page,
+body.light .home-intro {
+    background: #F6F3ED;
+}
+
+body.light .home-intro h1 {
+    color: #1B263B;
+}
+
+body.light .home-intro h1 em {
+    color: #3D5A80;
+}
+
+body.light .vertical-brand {
+    color: #A08C7D;
+    opacity: 0.45;
+}
+
+
+/* =========================
+   RESOURCE CARDS
+   ========================= */
+
+body.light .resource-card {
+    background: #EBE0D3;
+    border-color: #C4B6A6;
+    box-shadow: 0 18px 40px rgba(27, 38, 59, 0.07);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+body.light .resource-card:hover {
+    border-color: #3D5A80;
+    box-shadow: 0 22px 45px rgba(27, 38, 59, 0.12);
+    transform: translateY(-5px);
+}
+
+body.light .resource-type {
+    color: #3D5A80;
+}
+
+body.light .resource-number {
+    color: #A08C7D;
+}
+
+body.light .resource-card-content h2 {
+    color: #1B263B;
+}
+
+body.light .resource-card-content p {
+    color: #3D5A80;
+}
+
+
+/* =========================
+   PREFERENCES
+   ========================= */
+
+body.light .preference-card {
+    background: #D8E6F2;
+    border-color: #C4B6A6;
+}
+
+body.light .preference-card .eyebrow {
+    color: #3D5A80;
+}
+
+body.light .preference-card h2 {
+    color: #1B263B;
+}
+
+body.light .preference-card p {
+    color: #3D5A80;
+}
+
+body.light .theme-options .button {
+    background: #1B263B;
+    color: #F6F3ED;
+}
+
+body.light .theme-options .button:hover {
+    background: #3D5A80;
+}
+
+
+/* =========================
+   FEEDBACK
+   ========================= */
+
+body.light .feedback-card {
+    background: #EBE0D3;
+    border-color: #C4B6A6;
+    box-shadow: 0 18px 40px rgba(27, 38, 59, 0.07);
+}
+
+body.light .form-field label {
+    color: #3D5A80;
+}
+
+body.light .form-field input,
+body.light .form-field textarea {
+    background: #F6F3ED;
+    border-color: #C4B6A6;
+    color: #1B263B;
+}
+
+body.light .form-field input:focus,
+body.light .form-field textarea:focus {
+    border-color: #3D5A80;
+    outline-color: #3D5A80;
+}
+
+body.light .form-error {
+    color: #3D5A80;
+}
+
+body.light .feedback-card .button {
+    background: #1B263B;
+    color: #F6F3ED;
+}
+
+body.light .feedback-card .button:hover {
+    background: #3D5A80;
+}
+
+
+/* =========================
+   FEEDBACK THANKS
+   ========================= */
+
+body.light .feedback-thanks-card {
+    background: #D6B4AD;
+    border-color: #C4B6A6;
+}
+
+body.light .feedback-thanks-card p {
+    color: #1B263B;
+}
+
+
+/* =========================
+   404
+   ========================= */
+
+body.light .error-card {
+    background: #1B263B;
+    border-color: #3D5A80;
+    color: #F6F3ED;
+}
+
+body.light .error-card p {
+    color: #D8E6F2;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+body.light .site-footer {
+    background: #1B263B;
+    color: #F6F3ED;
+    border-color: #1B263B;
+}
+
+body.light .site-footer p {
+    color: #F6F3ED;
+}
+
+
+
+/* =========================
+   LIGHT FOOTER
+   ========================= */
+
+.light .site-footer {
+    background: #F6F3ED !important;
+    color: #1B263B !important;
+    border-top: 1px solid #D8E0E8 !important;
+}
+
+.light .footer-label {
+    color: #3D5A80 !important;
+}
+
+.light .footer-email,
+.light .footer-links a {
+    color: #1B263B !important;
+}
+
+.light .footer-credit {
+    color: #7C91A8 !important;
+}
+
+.light .footer-logo {
+    opacity: 1;
+}

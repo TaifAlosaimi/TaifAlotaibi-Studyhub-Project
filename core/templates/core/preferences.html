@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Preferences | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="preferences-page">
+
+    <div class="page-intro">
+
+        <p class="eyebrow">
+            STUDYHUB / SETTINGS
+        </p>
+
+        <h1>
+            Your
+            <em>Space.</em>
+        </h1>
+
+        <p class="page-description">
+            Customize the appearance of your StudyHub experience.
+        </p>
+
+    </div>
+
+
+    <div class="preference-card">
+
+        <div>
+
+            <p class="eyebrow">
+                APPEARANCE
+            </p>
+
+            <h2>Choose your theme.</h2>
+
+            <p>
+                Your preference will stay with you while
+                you browse StudyHub.
+            </p>
+
+        </div>
+
+
+        <div class="theme-options">
+
+            <a
+                class="button"
+                href="?theme=light"
+            >
+                Light
+            </a>
+
+            <a
+                class="button"
+                href="?theme=dark"
+            >
+                Dark
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

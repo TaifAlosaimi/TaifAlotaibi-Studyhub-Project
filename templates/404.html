@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="error-page">
+
+    <div class="page-intro">
+
+        <p class="eyebrow">
+            STUDYHUB / 404
+        </p>
+
+        <h1>
+            Lost
+            <em>Page.</em>
+        </h1>
+
+        <p class="page-description">
+            The resource you're looking for could not be found.
+        </p>
+
+    </div>
+
+
+    <div class="error-card">
+
+        <p>
+            It looks like this page doesn't exist.
+            Let's get you back to your learning space.
+        </p>
+
+        <a
+            class="button"
+            href="{% url 'home' %}"
+        >
+            Back to Home →
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

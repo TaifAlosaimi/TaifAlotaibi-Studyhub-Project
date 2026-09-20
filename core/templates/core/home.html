@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home | StudyHub{% endblock %}
+
+{% block content %}
+
+<section class="home-page">
+
+    <aside class="home-brand-rail">
+        <span>STUDYHUB</span>
+    </aside>
+
+    <div class="home-intro">
+
+        <p class="eyebrow">
+            A SPACE FOR CURIOUS MINDS
+        </p>
+
+        <h1>
+            Learning
+            <br>
+            Today for a
+            <br>
+            <em>Brighter Tomorrow</em>
+        </h1>
+
+        <p class="page-description">
+            Discover useful learning resources, explore new ideas,
+            and build the knowledge you need for what comes next.
+        </p>
+
+        <div class="home-actions">
+            <a class="button" href="{% url 'resource_list' %}">
+                Explore Resources
+                <span>→</span>
+            </a>
+
+            <span class="home-note">
+                LEARN · EXPLORE · GROW
+            </span>
+        </div>
+
+        <div class="home-accent-line">
+            <span></span>
+            <p>SMALL STEPS<br>BIG KNOWLEDGE</p>
+        </div>
+
+    </div>
+
+    <div class="home-visual">
+        <img
+            src="{% static 'images/home_hero.png.png' %}"
+            alt="StudyHub learning space"
+        >
+
+        <div class="home-image-label">
+            <span></span>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
